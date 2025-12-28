@@ -1,0 +1,7 @@
+[
+  {
+    "key": "command+a",
+    "command": "editor.action.selectAll",
+    "when": "editorTextFocus || !editorReadonly"
+  }
+]
