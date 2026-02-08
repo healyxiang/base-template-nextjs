@@ -1,6 +1,128 @@
 {
-    "HomePage": {
-        "title": "欢迎使用 Next.js 模板",
-        "description": "这是一个使用最新技术栈构建的前端项目模板"
-    }
+  "app": {
+    "title": "方寸桌面",
+    "doubleClick": "双击添加卡片组件",
+    "addWidget": "添加组件",
+    "export": "导出看板",
+    "tidy": "一键整理",
+    "widgetCount": "共 {count} 种类型"
+  },
+  "widgets": {
+    "todo": "待办清单",
+    "pomodoro": "番茄钟",
+    "anniversary": "纪念日",
+    "timer": "方寸时钟",
+    "companion": "虚拟伙伴",
+    "breath": "正念呼吸",
+    "mood": "情绪流动",
+    "yearCounter": "年进度",
+    "countdown": "倒计时",
+    "water": "饮水追踪",
+    "note": "便签",
+    "picker": "随机选择",
+    "bookmark": "书签收集",
+    "foodPicker": "今天吃啥",
+    "focusMusic": "专注音乐",
+    "qrCode": "二维码生成",
+    "worldClock": "世界时间",
+    "unknown": "未知组件"
+  },
+  "worldClock": {
+    "addCity": "添加城市",
+    "selectCity": "选择城市",
+    "remove": "删除"
+  },
+  "qr": {
+    "placeholder": "输入链接或文字...",
+    "tip": "手机扫码带走"
+  },
+  "pomodoro": {
+    "work": "专注",
+    "shortBreak": "短休",
+    "longBreak": "长休",
+    "start": "开始",
+    "pause": "暂停",
+    "sessions": "已专注: {count} 次"
+  },
+  "todo": {
+    "placeholder": "输入新任务...",
+    "aiBreakdown": "AI 任务分解",
+    "noTasks": "暂无任务"
+  },
+  "water": {
+    "goal": "目标：{count} 杯水"
+  },
+  "picker": {
+    "placeholder": "想选什么？",
+    "roll": "掷骰子",
+    "ready": "准备就绪"
+  },
+  "countdown": {
+    "setMinutes": "设置分钟",
+    "timeUp": "时间到！",
+    "focusSession": "专注时间"
+  },
+  "year": {
+    "timeline": "时间线",
+    "completed": "已完成",
+    "day": "第 {count} 天",
+    "remaining": "距离 {year} 年还有 {count} 天"
+  },
+  "breath": {
+    "start": "开始",
+    "begin": "开启冥想",
+    "end": "结束冥想",
+    "inhale": "吸气",
+    "hold": "屏息",
+    "exhale": "呼气"
+  },
+  "mood": {
+    "question": "今天心情如何？",
+    "recent": "近期趋势",
+    "great": "很好",
+    "fine": "一般",
+    "down": "消沉",
+    "tired": "疲惫",
+    "stressed": "压力大"
+  },
+  "anniversary": {
+    "eventName": "事项名称",
+    "done": "完成",
+    "cancel": "取消",
+    "today": "今天",
+    "daysLeft": "剩余天数",
+    "daysSince": "已过去天数",
+    "clickEdit": "点击编辑"
+  },
+  "bookmark": {
+    "namePlaceholder": "网站名称（可选）",
+    "urlPlaceholder": "网站链接 (如 google.com)",
+    "add": "添加书签",
+    "empty": "暂无书签"
+  },
+  "food": {
+    "pick": "开始抽取",
+    "result": "建议今天吃：",
+    "idle": "饿了吗？",
+    "spinning": "正在思考..."
+  },
+  "music": {
+    "rain": "治愈雨声",
+    "forest": "林间漫步",
+    "zen": "冥想禅意",
+    "cafe": "街角咖啡",
+    "piano": "静谧钢琴",
+    "waves": "海浪潮汐"
+  },
+  "weather": {
+    "loading": "加载中...",
+    "humidity": "湿度",
+    "wind": "风速",
+    "feelsLike": "体感",
+    "clear": "晴",
+    "cloudy": "多云",
+    "rainy": "下雨",
+    "snowy": "下雪",
+    "storm": "暴风雨"
+  }
 }

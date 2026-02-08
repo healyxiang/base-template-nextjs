@@ -122,5 +122,23 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
   }
+}
+
+/* ReactFlow custom styles */
+.react-flow__background {
+  background-color: transparent !important;
+}
+
+/* Hide scrollbar globally */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

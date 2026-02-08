@@ -1,6 +1,128 @@
 {
-    "HomePage": {
-        "title": "Welcome to Next.js Template",
-        "description": "This is a frontend project template built with the latest tech stack"
-    }
+  "app": {
+    "title": "InchDesk",
+    "doubleClick": "Double click to add card",
+    "addWidget": "Add Widget",
+    "export": "Export Board",
+    "tidy": "Magic Tidy",
+    "widgetCount": "{count} types available"
+  },
+  "widgets": {
+    "todo": "Todo List",
+    "pomodoro": "Pomodoro Timer",
+    "anniversary": "Anniversary",
+    "timer": "Inch Clock",
+    "companion": "Virtual Buddy",
+    "breath": "Mindful Breath",
+    "mood": "Mood Flow",
+    "yearCounter": "Year Progress",
+    "countdown": "Countdown",
+    "water": "Water",
+    "note": "Note",
+    "picker": "Picker",
+    "bookmark": "Bookmarks",
+    "foodPicker": "What to Eat",
+    "focusMusic": "Zen Focus Music",
+    "qrCode": "Quick QR",
+    "worldClock": "World Clock",
+    "unknown": "Unknown Widget"
+  },
+  "worldClock": {
+    "addCity": "Add City",
+    "selectCity": "Select a city",
+    "remove": "Remove"
+  },
+  "qr": {
+    "placeholder": "Paste link or text...",
+    "tip": "Scan to mobile"
+  },
+  "pomodoro": {
+    "work": "Focus",
+    "shortBreak": "Short Break",
+    "longBreak": "Long Break",
+    "start": "Start",
+    "pause": "Pause",
+    "sessions": "Focused: {count}"
+  },
+  "todo": {
+    "placeholder": "New task...",
+    "aiBreakdown": "AI Breakdown",
+    "noTasks": "No tasks yet"
+  },
+  "water": {
+    "goal": "Goal: {count} Glasses"
+  },
+  "picker": {
+    "placeholder": "What to pick?",
+    "roll": "Roll the Dice",
+    "ready": "Ready to pick"
+  },
+  "countdown": {
+    "setMinutes": "Set Minutes",
+    "timeUp": "Time is up!",
+    "focusSession": "Focus Session"
+  },
+  "year": {
+    "timeline": "Timeline",
+    "completed": "Completed",
+    "day": "Day",
+    "remaining": "{count} days until {year}"
+  },
+  "breath": {
+    "start": "Start",
+    "begin": "Begin Session",
+    "end": "End Session",
+    "inhale": "Inhale",
+    "hold": "Hold",
+    "exhale": "Exhale"
+  },
+  "mood": {
+    "question": "How are you today?",
+    "recent": "Recent Flow",
+    "great": "Great",
+    "fine": "Fine",
+    "down": "Down",
+    "tired": "Tired",
+    "stressed": "Stressed"
+  },
+  "anniversary": {
+    "eventName": "Event Name",
+    "done": "Done",
+    "cancel": "Cancel",
+    "today": "Today",
+    "daysLeft": "Days Left",
+    "daysSince": "Days Since",
+    "clickEdit": "Click to Edit"
+  },
+  "bookmark": {
+    "namePlaceholder": "Website Name (Optional)",
+    "urlPlaceholder": "Website Link (e.g. google.com)",
+    "add": "Add Bookmark",
+    "empty": "No bookmarks yet"
+  },
+  "food": {
+    "pick": "Spin the Wheel",
+    "result": "You should eat:",
+    "idle": "Hungry?",
+    "spinning": "Thinking..."
+  },
+  "music": {
+    "rain": "Rainfall",
+    "forest": "Deep Forest",
+    "zen": "Zen Meditation",
+    "cafe": "Cozy Cafe",
+    "piano": "Soft Piano",
+    "waves": "Ocean Waves"
+  },
+  "weather": {
+    "loading": "Loading...",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "feelsLike": "Feels Like",
+    "clear": "Clear",
+    "cloudy": "Cloudy",
+    "rainy": "Rainy",
+    "snowy": "Snowy",
+    "storm": "Storm"
+  }
 }
