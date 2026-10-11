@@ -1,12 +1,25 @@
+import type { Metadata } from "next"
 import { NextIntlClientProvider } from "next-intl"
-import { getMessages } from "next-intl/server"
+import { getMessages, setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
-import { routing } from "@/i18n/routing"
-
+import { site, isLocale } from "@/config/site"
+import { AuthProvider } from "@/components/auth-provider"
+import { Analytics } from "@/components/analytics"
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }))
+  return [{ locale: "en" }, { locale: "zh" }]
 }
-
+export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
+  title: { default: site.name, template: `%s | ${site.name}` },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+    other: process.env.BING_SITE_VERIFICATION
+      ? { "msvalidate.01": process.env.BING_SITE_VERIFICATION }
+      : {},
+  },
+  openGraph: { images: ["/opengraph-image"] },
+  twitter: { images: ["/opengraph-image"] },
+}
 export default async function LocaleLayout({
   children,
   params,
@@ -15,17 +28,18 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-
-  if (!routing.locales.includes(locale as any)) {
-    notFound()
-  }
-
+  if (!isLocale(locale)) notFound()
+  setRequestLocale(locale)
   const messages = await getMessages()
-
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <AuthProvider>
+            {children}
+            <Analytics />
+          </AuthProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   )
